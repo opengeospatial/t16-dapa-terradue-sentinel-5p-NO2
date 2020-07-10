@@ -40,5 +40,5 @@ These resources are:
 
 Click on the badge below to start your own DAPA demonstator instance:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gl/terradue-ogctb16%2Fdapa%2Fd167-api-endpoint%2Ffastapi-dapa/master?urlpath=/proxy/8001/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opengeospatial/t16-dapa-terradue-sentinel-5p-NO2/master?urlpath=/proxy/8001/)
 

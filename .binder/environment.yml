@@ -1,0 +1,19 @@
+name: env_fastapi
+channels:
+  - terradue
+  - conda-forge
+dependencies:
+  - fastapi
+  - uvicorn
+  - jupyter-server-proxy
+  - xarray
+  - zarr
+  - numcodecs
+  - fsspec
+  - cachey
+  - toolz
+  - rasterio
+  - matplotlib
+  - shapely
+  - teetoodapa>=0.0.4
+  - voila=0.1.21

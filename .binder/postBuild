@@ -1,0 +1,46 @@
+jupyter serverextension enable --sys-prefix jupyter-server-proxy
+jupyter labextension install @jupyterlab/geojson-extension
+
+git clone https://github.com/jhamman/xpublish.git
+cd xpublish
+
+/srv/conda/envs/notebook/bin/python setup.py install
+
+cd -
+rm -fr xpublish
+
+# documentation
+pip install mkdocs mkdocs-material mknotebooks
+
+mkdir /home/jovyan/.data
+base_url='https://store.terradue.com:443/api/ogc-tb16/s5p/tropospheric_NO2_column_number_density/'
+
+while read t
+do
+  curl ${base_url}/${t} --output .data/${t}
+done << EOF
+s5p-l3-tropno2-month-201805-europe.tif
+s5p-l3-tropno2-month-201806-europe.tif
+s5p-l3-tropno2-month-201807-europe.tif
+s5p-l3-tropno2-month-201808-europe.tif
+s5p-l3-tropno2-month-201809-europe.tif
+s5p-l3-tropno2-month-201810-europe.tif
+s5p-l3-tropno2-month-201811-europe.tif
+s5p-l3-tropno2-month-201812-europe.tif
+s5p-l3-tropno2-month-201901-europe.tif
+s5p-l3-tropno2-month-201902-europe.tif
+s5p-l3-tropno2-month-201903-europe.tif
+s5p-l3-tropno2-month-201904-europe.tif
+s5p-l3-tropno2-month-201905-europe.tif
+s5p-l3-tropno2-month-201906-europe.tif
+s5p-l3-tropno2-month-201907-europe.tif
+s5p-l3-tropno2-month-201908-europe.tif
+s5p-l3-tropno2-month-201909-europe.tif
+s5p-l3-tropno2-month-201910-europe.tif
+s5p-l3-tropno2-month-201911-europe.tif
+s5p-l3-tropno2-month-201912-europe.tif
+s5p-l3-tropno2-month-202001-europe.tif
+s5p-l3-tropno2-month-202002-europe.tif
+s5p-l3-tropno2-month-202003-europe.tif
+s5p-l3-tropno2-month-202004-europe.tif
+EOF

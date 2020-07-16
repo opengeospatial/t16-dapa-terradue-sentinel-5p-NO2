@@ -15,5 +15,5 @@ dependencies:
   - rasterio
   - matplotlib
   - shapely
-  - teetoodapa>=0.0.4
+  - teetoodapa=0.0.4
   - voila=0.1.21

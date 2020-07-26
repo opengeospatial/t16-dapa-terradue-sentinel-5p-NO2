@@ -15,9 +15,14 @@ cd /home/jovyan
 
 [ `cat /etc/resolv.conf | grep gesis | wc -l` == 1 ] && teetoodapa --port 8000 --host 0.0.0.0 --root-path /binder/jupyter/user/opengeospatial--sentinel-5p-no2-${uid}/proxy/8000 &
 
-# dcoumentation 
+teetoodapa --dataset europe --port 8000 --host 0.0.0.0 --root-path ${rootpath}8000 &
+#teetoodapa --dataset china --port 8002 --host 0.0.0.0 --root-path ${rootpath}8002 &
+
+# documentation 
 mkdocs serve -a 0.0.0.0:8001 &
 
-xserve &
+xserve --folder europe --port 9012 &
+
+xserve --folder china --port 9013 &
 
 exec "$@"

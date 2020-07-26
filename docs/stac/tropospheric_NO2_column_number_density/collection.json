@@ -1,0 +1,49 @@
+{
+    "id": "tropospheric_NO2_column_number_density",
+    "stac_version": "0.8.1",
+    "description": "Sentinel-5P Tropospheric NO2 column number density",
+    "links": [
+        {
+            "rel": "item",
+            "href": "./tropospheric_NO2_column_number_density_europe/tropospheric_NO2_column_number_density_europe.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "item",
+            "href": "./tropospheric_NO2_column_number_density_china/tropospheric_NO2_column_number_density_china.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../catalog.json",
+            "type": "application/json"
+        }
+    ],
+    "title": "Sentinel-5P Tropospheric NO2 column number density",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -13.0078125,
+                    33.02490234375,
+                    33.0029296875,
+                    57.01904296875
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2018-05-01T00:00:00Z",
+                    "2020-04-01T00:00:00Z"
+                ]
+            ]
+        }
+    },
+    "license": "proprietary"
+}

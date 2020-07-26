@@ -1,0 +1,17 @@
+{
+    "id": "catalog",
+    "stac_version": "0.8.1",
+    "description": "Tropospheric NO2 column number density",
+    "links": [
+        {
+            "rel": "root",
+            "href": "./catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "child",
+            "href": "./tropospheric_NO2_column_number_density/collection.json",
+            "type": "application/json"
+        }
+    ]
+}

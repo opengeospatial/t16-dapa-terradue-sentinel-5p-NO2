@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+logfile.txt
+*.nc
+.data
+dist
+build
+.DS_Store

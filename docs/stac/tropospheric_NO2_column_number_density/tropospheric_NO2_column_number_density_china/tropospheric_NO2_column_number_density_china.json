@@ -1,0 +1,72 @@
+{
+    "type": "Feature",
+    "stac_version": "0.8.1",
+    "id": "tropospheric_NO2_column_number_density_china",
+    "properties": {
+        "datetime": "2018-05-01T00:00:00Z"
+    },
+    "geometry": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            123,
+                            28
+                        ],
+                        [
+                            123,
+                            37
+                        ],
+                        [
+                            104,
+                            37
+                        ],
+                        [
+                            104,
+                            28
+                        ],
+                        [
+                            123,
+                            28
+                        ]
+                    ]
+                ]
+            }
+        }
+    ],
+    "bbox": [
+        104,
+        28,
+        123,
+        37
+    ],
+    "links": [
+        {
+            "rel": "collection",
+            "href": "../collection.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "root",
+            "href": "../../catalog.json",
+            "type": "application/json"
+        },
+        {
+            "rel": "parent",
+            "href": "../collection.json",
+            "type": "application/json"
+        }
+    ],
+    "assets": {
+        "data": {
+            "href": "http://0.0.0.0:8002",
+            "type": "application/vnd.xarray",
+            "title": "Sentinel-5P Tropospheric NO2 column number density over eastern China"
+        }
+    },
+    "collection": "tropospheric_NO2_column_number_density"
+}

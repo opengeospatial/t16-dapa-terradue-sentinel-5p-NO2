@@ -12,12 +12,14 @@ rm -fr xpublish
 # documentation
 pip install mkdocs mkdocs-material mknotebooks
 
-mkdir /home/jovyan/.data
+mkdir -p /home/jovyan/.data/europe
+mkdir -p /home/jovyan/.data/china
+
 base_url='https://store.terradue.com:443/api/ogc-tb16/s5p/tropospheric_NO2_column_number_density/'
 
 while read t
 do
-  curl ${base_url}/${t} --output .data/${t}
+  curl ${base_url}/${t} --output .data/europe/${t}
 done << EOF
 s5p-l3-tropno2-month-201805-europe.tif
 s5p-l3-tropno2-month-201806-europe.tif
@@ -43,4 +45,34 @@ s5p-l3-tropno2-month-202001-europe.tif
 s5p-l3-tropno2-month-202002-europe.tif
 s5p-l3-tropno2-month-202003-europe.tif
 s5p-l3-tropno2-month-202004-europe.tif
+EOF
+
+while read t
+do
+  curl ${base_url}/${t} --output .data/china/${t}
+done << EOF
+s5p-l3-tropno2-month-201805-china.tif
+s5p-l3-tropno2-month-201806-china.tif
+s5p-l3-tropno2-month-201807-china.tif
+s5p-l3-tropno2-month-201808-china.tif
+s5p-l3-tropno2-month-201809-china.tif
+s5p-l3-tropno2-month-201810-china.tif
+s5p-l3-tropno2-month-201811-china.tif
+s5p-l3-tropno2-month-201812-china.tif
+s5p-l3-tropno2-month-201901-china.tif
+s5p-l3-tropno2-month-201902-china.tif
+s5p-l3-tropno2-month-201903-china.tif
+s5p-l3-tropno2-month-201904-china.tif
+s5p-l3-tropno2-month-201905-china.tif
+s5p-l3-tropno2-month-201906-china.tif
+s5p-l3-tropno2-month-201907-china.tif
+s5p-l3-tropno2-month-201908-china.tif
+s5p-l3-tropno2-month-201909-china.tif
+s5p-l3-tropno2-month-201910-china.tif
+s5p-l3-tropno2-month-201911-china.tif
+s5p-l3-tropno2-month-201912-china.tif
+s5p-l3-tropno2-month-202001-china.tif
+s5p-l3-tropno2-month-202002-china.tif
+s5p-l3-tropno2-month-202003-china.tif
+s5p-l3-tropno2-month-202004-china.tif
 EOF

@@ -29,8 +29,8 @@ Concentrations of short-lived pollutants, such as nitrogen dioxide, are indicato
 
 Learn more about the impact of COVID-19 on the NO2 concentration with the following resources:
 
-- http://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Air_pollution_remains_low_as_Europeans_stay_at_home
-- https://eo4society.esa.int/2020/05/14/is-the-global-covid-19-related-drop-in-no2-pollution-coming-to-an-end/
+- <a href="http://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-5P/Air_pollution_remains_low_as_Europeans_stay_at_home" target="_blank">Air pollution remains low as Europeans stay at home</a>  
+- <a href="https://eo4society.esa.int/2020/05/14/is-the-global-covid-19-related-drop-in-no2-pollution-coming-to-an-end/" target="_blank">Is the global covid-19 related drop in NO2 pollution coming to an end?</a>
 
 ### Getting familiar with the environment
 
@@ -38,11 +38,11 @@ Binder hosts this demonstration providing:
 
 - [DAPA OpenAPI documentation](../8000/docs) 
 
- <a href="../8000/docs"><img src="imgs/dapa_api_docs.png" alt="" style="width:678px;height:474px;"><a>
+ <a href="../8000/docs" target="_blank"><img src="imgs/dapa_api_docs.png" alt="" style="width:678px;height:474px;"><a>
 
 - A [JupyterLab](../../lab) interface to run the examples and explore the DAPA API with additional notebooks
 
- <a href="../../lab"><img src="imgs/lablanding.png" alt="" style="width:678px;height:427px;"><a>
+ <a href="../../lab" target="_blank"><img src="imgs/lablanding.png" alt="" style="width:678px;height:427px;"><a>
 
 - [This documentation](./)
 
@@ -52,8 +52,8 @@ We recommend using a different browser tab for each of the resources above
 
 First, open the [DAPA OpenAPI documentation](../8000/docs) and try each API call sequentially.
 
-When asked for a bounding box, we suggest using the value `2.12,48.75,2.52,48.99` that corresponds to Paris in France.
-
+When asked for a location, we suggest setting a free text value such as `Paris, France`.
+     
 Then go to back to [Getting started section of this documentation](./started/) and run the Jupyter Notebooks sequentially.
 
 At this stage, you should be familiar with the API and can thus start your own new notebooks using the provided [JupyterLab](../../lab) environment.
